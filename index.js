@@ -46,7 +46,7 @@ server.post("/api", upload.single("imagen"), async (peticion, respuesta) => {
   });
 });
 
-const port = process.env.SIXTO || 8000;
+const port = process.env.PORT || 8000;
 server.listen(port, () => {
   console.log("Escuchando en http://localhost:" + port);
 });
